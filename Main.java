@@ -136,8 +136,8 @@ class CarRentalSystem {
         while(true){
             System.out.println("===RENTAL CAR SYSTEM===");
             System.out.println("1. RENT A CAR");
-            System.out.println("RETURN A CAR");
-            System.out.println("EXIT");
+            System.out.println("2.RETURN A CAR");
+            System.out.println("3.EXIT");
             System.out.print("Enter your choice:");
             int choice =sc.nextInt();
             sc.nextLine();
@@ -177,7 +177,7 @@ class CarRentalSystem {
                     System.out.println("Customer Information");
                     System.out.println("Customer ID: "+newCustomer.getcusId());
                     System.out.println("Customer Name: "+newCustomer.getcusName());
-                    System.out.println("Car :"+selectedCar.getcarBrand()+selectedCar.getcarModel());
+                    System.out.println("Car :"+selectedCar.getcarBrand()+" "+selectedCar.getcarModel());
                     System.out.println("rental days:"+rentDays);
                     System.out.printf("Total Price: $%.2f%n", totalPrice);
 
